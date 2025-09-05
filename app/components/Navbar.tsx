@@ -11,6 +11,7 @@ const Navbar = () => {
         Upload Resume
       </Link>
     </nav>
+    
   )
 }
 
