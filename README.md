@@ -1,18 +1,33 @@
-# Welcome to React Router!
+# AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, intelligent React application that analyzes your resume and provides personalized feedback to help you improve your job application materials. Built with React Router for seamless navigation and powered by Puter to deliver actionable insights.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- 🤖 **AI-Powered Analysis** - Advanced algorithms analyze your resume content
+- 📊 **Comprehensive Feedback** - Get detailed suggestions on content, formatting, and structure
+- 📈 **Scoring System** - Receive an overall resume score with breakdown by category
+- 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
+- 📦 **Asset Bundling and Optimization** - Optimized for production performance
+- 🔄 **Data Loading and Mutations** - Efficient state management
+- 🔒 **TypeScript Support** - Type-safe development
+- 🎉 **TailwindCSS Styling** - Modern, utility-first CSS framework
+- 📄 **File Formats** - Support for PDF uploads
+- 💾 **Analysis History** - Track your resume improvements over time
+
+## How It Works
+
+1. **Upload Your Resume** - Simply drag and drop or select your resume file
+2. **AI Analysis** - Our intelligent system analyzes content, structure, keywords, and formatting
+3. **Receive Feedback** - Get detailed, actionable recommendations organized by category:
+   - Content & Keywords
+   - Structure & Formatting
+   - ATS Compatibility
+   - Industry Best Practices
+4. **Implement Changes** - Follow the suggestions to improve your resume
+5. **Re-analyze** - Upload your updated resume to track improvements
 
 ## Getting Started
 
@@ -42,32 +57,9 @@ Create a production build:
 npm run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
+### Deployment
 
 If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
 Make sure to deploy the output of `npm run build`
 
 ```
@@ -84,4 +76,4 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router and powered by Puter AI to help you create the perfect resume.
