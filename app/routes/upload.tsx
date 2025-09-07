@@ -22,14 +22,14 @@ const upload = () => {
 
         if (!uploadedFile) return setStatusText('Error: Failed to Upload File');
 
-        // setStatusText('Converting to image...')
-        // const imageFile = await convertPdfToImage(file)
+        setStatusText('Converting to image...')
+        const imageFile = await convertPdfToImage(file)
 
-        // if (!imageFile.file) return setStatusText('Error: Failed to convert pdf to image');
+        if (!imageFile.file) return setStatusText('Error: Failed to convert pdf to image');
 
-        // setStatusText('Uploading the image...')
-        // const uploadedImage = await fs.upload([imageFile.file])
-        // if (!uploadedImage) return setStatusText('Failed to Upload image');
+        setStatusText('Uploading the image...')
+        const uploadedImage = await fs.upload([imageFile.file])
+        if (!uploadedImage) return setStatusText('Failed to Upload image');
 
         setStatusText('Preparing Data...')
 
@@ -37,7 +37,7 @@ const upload = () => {
         const data = {
             id: uuid,
             resumePath: uploadedFile.path,
-            imagePath:'/images/resume_02.png', //to be changed later
+            imagePath: uploadedImage.path,
             companyName, jobDescription, jobTitle,
             feedback: ''
         }
